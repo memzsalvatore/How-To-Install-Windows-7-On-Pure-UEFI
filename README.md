@@ -1,14 +1,14 @@
 # How-To-Install-Windows-7-On-Pure-UEFI
 A Simple Detailed Guide On How to Install Windows 7 on Pure UEFI
-                Guide on Installing windows 7 on Pure UEFI machines.
-==========================================================================================================================================================
-Warning: Im not responsible for any damages done to your device follow the steps at your own risks. 
+                
+# Warning:
+Im not responsible for any damages done to your device follow the steps at your own risks. 
 There May be Errors For More Info Take a look a the Notice Tab.
 
-Updates will be Listed here:
-==========================================================================================================================================================
-Notice:
-===========
+Updates will be Listed here: 1/17/2026
+
+# Notice:
+
 The Computer Can have a Windows boot Manager Error if not done Correctly So I Recommend backing up Your Current Linux/Windows Installation at Any point
 
 
@@ -54,9 +54,9 @@ Lastly this Guide may not Work For you as i have tested this on an HP Prodesk 60
 Know how to do it on so you might look into other guides
 
 	
-==========================================================================================================================================================
-Requirements (Necassary)
-==========================================================================================================================================================
+
+# Requirements (Necassary):
+
 Human Requirements Aswell as:
 
 Patience Lots of it
@@ -86,9 +86,9 @@ Download winNTsetup (optional) https://www.majorgeeks.com/files/details/winntset
 Download Winrar: https://www.win-rar.com/start.html?&L=0
 
 Download 7zip: https://www.7-zip.org/
-==========================================================================================================================================================
-Editing files and installing uefi seven (and windows 7 itself)
-==========================================================================================================================================================
+
+# Editing files and installing uefi seven (and windows 7 itself)
+
 Open rufus and select Your USB drive and select UEFI GPT and Standard Windows installation 
 
 Put the iso You have or just downloaded and start the installation (may take a while)
@@ -122,7 +122,7 @@ If your windows install is intact log in as Adminstrator by Opening CMD as admin
 Log into Adminstrator User
 
 Open CMD as admin again and type the following
-==========================================================================================================================================================
+
 DISKPART
 
 LIST DISK
@@ -138,7 +138,7 @@ assign letter=Z
 exit
 
 exit
-==========================================================================================================================================================
+
 Now that You done This Simply open File explorer go to the EFI partition and go to (HDD)\EFI\Microsoft\Boot\
 
 Rename bootmgfw.efi to bootmgfw.original.efi
@@ -152,11 +152,11 @@ Log out of Adminstrator account and go to CMD then type: net user administrator 
 Reboot the computer and windows 7 should appear.
 
 Note: if Youre on an hp computer (or any pc that supports booting via file) Boot via file and select bootmgfw.efi if it dosent Appear
-==========================================================================================================================================================
-Alternative way:
+
+# Alternative way:
 
 Instead of Doing the above you can do this:
-==========================================================================================================================================================
+
 
 Extract the winNTsetup application to anywhere on Your Desktop using 7zip or winrar
 
@@ -181,7 +181,7 @@ Log in As Adminstrator by opening command prompt as admin and type this: net use
 Log in to Adminstrator and go to the efi partition if you cant see it on file explorer do this
 
 Open CMD as admin and type the following
-==========================================================================================================================================================
+
 DISKPART
 
 LIST DISK
@@ -197,7 +197,7 @@ assign letter=M
 exit
 
 exit
-==========================================================================================================================================================
+
 
 Now Go to (HDD)\EFI\Microsoft\Boot\
 
@@ -212,5 +212,4 @@ Log out of Adminstrator account and go to CMD then type: net user administrator 
 Reboot the computer and windows 7 should appear.
 
 Note: if Youre on an hp computer (or any pc that supports booting via file) Boot via file and select bootmgfw.efi if it dosent Appear
-==========================================================================================================================================================
 
