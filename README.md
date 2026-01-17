@@ -21,10 +21,10 @@ Also I tend To have Grammar Mistakes apologies. Im a very Lazy man
 
 Windows 7 is LONG outdated I wouldn't use it as a daily machine but If you like 7 then You could use an anti virus or have common sense.
 
-Please Note that there Might be Errors and If theres any you could tell me where and ill Update the Guide.
+Please Note that there Might be Errors if theres any ill update the guide as fast as possible
 
 Using Adminstrator Account on Windows is VERY Dangerous therefore i mention saying this: net user administrator /active:no
-The Main Reason is Because its too Risky to have Adminstrator Account active 24/7 as it has Elevated Permessions
+    The Main Reason is Because its too Risky to have Adminstrator Account active 24/7 as it has Elevated Permessions
 
 This Guide is For Users who have atleast have a decent amount experience to continue I dont recommend doing this as a complete Beginner
 
