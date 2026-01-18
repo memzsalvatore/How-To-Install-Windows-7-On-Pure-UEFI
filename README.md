@@ -62,7 +62,7 @@ Windows PE environment of some kind
 
 Have a UEFI Machine
 
-Download an iso of some kind that dosemt fail halfway. (must be x64 and between ultimate professional or enterprise.) (you also might need to slipstream it with usb 3.0 and nvme drivers.)
+Download this iso because it has mostly everything you need: https://archive.org/details/windows-7-updated-2024-06-12 (You can still use your own iso if u need to.)
 
 Download uefiseven (if you have issues with uefiseven then bad luck i dont know how to do it myself without uefiseven)
 file: https://github.com/manatails/uefiseven
