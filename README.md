@@ -40,7 +40,7 @@ Mypal (if you lost your mind): https://www.mypal-browser.org/
 
 Make Sure to Install all Visual and Redist Drivers
 
-Lastly If Youre Device is Slow as Hell and You Dont like Linux Somehow sure Use Windows 7 (if you have UEFI to follow this guide atleast)
+Lastly If Your Device is Slow as Hell and You Dont like Linux Somehow sure Use Windows 7 (if you have UEFI to follow this guide atleast)
 
 Also Activation Servers are Long Gone so If you havent Already you Can Try and activate it on Your own or do System maintance such As typing
 
