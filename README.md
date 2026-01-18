@@ -5,26 +5,24 @@ A Simple Detailed Guide On How to Install Windows 7 on Pure UEFI
 Im not responsible for any damages done to your device follow the steps at your own risks. 
 There May be Errors For More Info Take a look a the Notice Tab.
 
-Updates will be Listed here: 1/17/2026
+Updates will be Listed here: 1/18/2026
 
 # Notice:
+Windows boot Manager can Error out if not done Correctly So I Recommend backing up Your Current Linux/Windows Installation at some point
 
-The Computer Can have a Windows boot Manager Error if not done Correctly So I Recommend backing up Your Current Linux/Windows Installation at Any point
 
+If You have multiple storage devices You Might Find the Proccess Easier If you have 2 Hdds i Recommend Force Installing it to the Location ofYour Liking Using WinNTsetup Because Windows Installers Tend to be Flaky as Hell.
 
-If You have multiple external Devices You Might Find the Proccess Easier If you have 2 Hdds i Recommend Force Installing it to the Location of
-Your Liking Using WinNTsetup Because Windows Installers Tend to be Flaky as Hell.
-
-You Could also Use an EFI partition on a Different drive then Installing Windows To the Partition you wanna Install It on
+You Could also Use an EFI partition on a Different drive then Installing Windows To the Partition on another drive you wanna Install It on
 
 Also I tend To have Grammar Mistakes apologies. Im a very Lazy man
 
-Windows 7 is LONG outdated I wouldn't use it as a daily machine but If you like 7 then You could use an anti virus or have common sense.
+Windows 7 is good and all but I wouldn't use it as a daily machine but If you like 7 then You could use an anti virus or have common sense.
 
-Please Note that there Might be Errors if theres any ill update the guide as fast as possible
+Please Note that there Might be Errors if theres any will update the guide as fast as possible
 
 Using Adminstrator Account on Windows is VERY Dangerous therefore i mention saying this: net user administrator /active:no
-    The Main Reason is Because its too Risky to have Adminstrator Account active 24/7 as it has Elevated Permessions
+The Main Reason is Because its too Risky to have Adminstrator Account active 24/7 as it has Elevated Permessions    
 
 This Guide is For Users who have atleast have a decent amount experience to continue I dont recommend doing this as a complete Beginner
 
@@ -42,7 +40,7 @@ Mypal (if you lost your mind): https://www.mypal-browser.org/
 
 Make Sure to Install all Visual and Redist Drivers
 
-Lastly If Youre Device is Slow as Hell and You Dont like Linux Somehow sure Use windows7 (if you have UEFI to follow this guide atleast)
+Lastly If Youre Device is Slow as Hell and You Dont like Linux Somehow sure Use Windows 7 (if you have UEFI to follow this guide atleast)
 
 Also Activation Servers are Long Gone so If you havent Already you Can Try and activate it on Your own or do System maintance such As typing
 
@@ -50,36 +48,30 @@ Open cmd as admin type slmgr -rearm every 1 week as Windows 7 is Very aggressive
 
 Or You could Find any activation metheods Online.
 
-Lastly this Guide may not Work For you as i have tested this on an HP Prodesk 600 G2 MT Theres Alot of Different PCs/Laptops Out there that i dont exactly
-Know how to do it on so you might look into other guides
-
-	
+Lastly this Guide may not Work For you as i have tested this on an HP Prodesk 600 G2 MT Theres Alot of Different PCs/Laptops Out there that i dont exactlyKnow how to do it on so you might look into other guides
 
 # Requirements (Necassary):
 
 Human Requirements Aswell as:
 
-Patience Lots of it
+Patience. Lots of it.
 
 Sanity (insanity works too)
 
-Windows PE environment of some kind or a Linux Live ISO/CD (optional)
+Windows PE environment of some kind 
 
 Have a UEFI Machine
 
-Download a trusted slip streamed iso (or raw windows 7 iso then slipstream it yourself) if you cant slipstream i highly recommend using this
-iso: 
+Download an iso of some kind that dosemt fail halfway. (must be x64 and between ultimate professional or enterprise.) (you also might need to slipstream it with usb 3.0 and nvme drivers.)
 
 Download uefiseven (if you have issues with uefiseven then bad luck i dont know how to do it myself without uefiseven)
 file: https://github.com/manatails/uefiseven
 
-(if you dont know how to download files from github you go to the releases tab on the right and then download it)
+Download your devices drivers for windows 7 if you cant find any u can try downloading the windows 10 driver and installing it manually in 7 (may not work)
 
-Download your devices drivers for windows 7 if not u can try downloading the windows 10 driver and installing it manually in 7 (may not work)
+USB thumb drive at a minimum of 8 gigabytes (required)
 
-USB thumb drive at a minimum of 8 gigabytes
-
-Download Rufus: https://rufus.ie/en/
+Download Rufus: https://rufus.ie/en/ (may be required)
 
 Download winNTsetup (optional) https://www.majorgeeks.com/files/details/winntsetup_64_bit.html
 
@@ -91,7 +83,7 @@ Download 7zip: https://www.7-zip.org/
 
 Open rufus and select Your USB drive and select UEFI GPT and Standard Windows installation 
 
-Put the iso You have or just downloaded and start the installation (may take a while)
+Put the iso You have or just downloaded and start the flashing process (may take a while)
 
 After flashing the iso to the usb open the usb drive and go to (UsbDrive)\EFI\Boot\
 
@@ -99,7 +91,7 @@ Rename bootx64.efi to bootx64.original.efi
 
 Unpack bootx64.efi from UefiSeven archive and copy it to (UsbDrive)\EFI\Boot\
 
-Simply Before You Reboot You open Disk manager by Pressing Win+X or W+R select disk manager and type diskmgmt.msc
+Simply Before You Reboot You open Disk manager by Pressing Win+X or W+R type diskmgmt.msc you could Also use Diskpart if you like to but dont overcomplicate it
 
 Partition Your Drive to the storage of your liking in Megabytes. (MBs)
 
@@ -121,7 +113,7 @@ If your windows install is intact log in as Adminstrator by Opening CMD as admin
 
 Log into Adminstrator User
 
-Open CMD as admin again and type the following
+Open CMD again and type the following
 
 DISKPART
 
@@ -147,7 +139,7 @@ Then take the bootx64.efi from uefiseven folder and rename it to bootmgfw.efi
 
 Put it on (HDD)\EFI\Microsoft\Boot\
 
-Log out of Adminstrator account and go to CMD then type: net user administrator /active:no
+Log out of Adminstrator account and go to CMD as admimn in your user account then type: net user administrator /active:no
 
 Reboot the computer and windows 7 should appear.
 
